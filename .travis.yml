@@ -1,0 +1,17 @@
+language: generic
+os: osx
+before_install:
+  - brew update
+  - brew install pandoc
+  - brew cask install basictex
+install:
+  - export PATH="/Library/TeX/texbin:$PATH"
+script:
+  - make resume.pdf
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  file: "resume.pdf"
+  on:
+    branch: master
