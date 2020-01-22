@@ -11,8 +11,8 @@ A full stack software engineer helping music enthusiasts around the world.
 Senior Software Engineer (Remote) \hfill 2013 - Present
 
 Discogs is the largest online marketplace for music on physical media, with
-over 45 million items for sale, supported by a cross-referenced
-user-contributed database containing more than 9 million releases.
+over 50 million items for sale, supported by a cross-referenced
+user-contributed database containing more than 10 million releases.
 
 ### Blackline Consulting
 
