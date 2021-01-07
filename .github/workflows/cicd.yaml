@@ -1,0 +1,27 @@
+name: CI/CD
+on:
+  push:
+    branches:
+    - master
+jobs:
+  build:
+    name: Build and deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Create temp directory
+        run: mkdir output
+      - name: Build
+        uses: docker://pandoc/latex:2.9
+        with:
+          args: >-
+            -V geometry:margin=1in
+            -V fontsize=12pt
+            -o output/resume.pdf
+            resume.md
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
