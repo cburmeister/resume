@@ -11,8 +11,8 @@ A full stack software engineer helping music enthusiasts around the world.
 *Senior Software Engineer* (Portland, Oregon), January 2013 - Present
 
 Discogs is the largest online marketplace for music on physical media, with
-over 58 million items for sale, supported by a cross-referenced
-user-contributed database containing more than 13 million releases. I help
+over 59 million items for sale, supported by a cross-referenced
+user-contributed database containing more than 14 million releases. I help
 maintain an opinionated configuration of Kubernetes with a set of services and
 integrations that enable other engineering teams to deploy containerized
 applications. I've gained extensive experience with Python, MySQL,
